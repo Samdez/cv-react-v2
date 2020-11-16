@@ -1,8 +1,8 @@
 import GlobalStyle from './styles/GlobalStyles'
 import Nav from './components/Nav';
 import AboutMe from './components/AboutMe';
-import { Hero } from './styles/styles';
 import HeroPage from './components/Hero';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Nav />
       <HeroPage />
       <AboutMe />
+      <Skills />
     </div>
   );
 }

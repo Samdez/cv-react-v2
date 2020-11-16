@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import pic3 from '../img/pic3.jpg';
+import {primaryColor} from '../styles/GlobalStyles'
+import { motion } from 'framer-motion';
+
 
 export const Hero = styled.div`
 background-image: url(${pic3});
@@ -13,23 +16,6 @@ position: absolute;
 top: 0;
 z-index: -1;
 `;
-
-// export const StyledLink = styled.a`
-// text-decoration: none;
-// color: black;
-// font-size: 1.2rem;
-// font-weight: 600;
-// &:focus, &:visited, &:link{
-//   text-decoration: none;
-//   } 
-// &:hover{
-//   color: black;
-//   transition: all 0.5s ease;
-// }
-// &:active{
-//   color: black;
-// }
-// `;
 
 export const NavContainer = styled.div`
 display: flex;
@@ -66,7 +52,7 @@ ul{
       transition: all 0.5s ease;
       cursor: pointer;
       border-radius: 0px 0px 122px 122px;
-      background-color: #0AECB2;
+      background-color: ${primaryColor};
     }
   }
 }
@@ -81,7 +67,7 @@ align-items: center;
 flex-wrap: nowrap; 
 `;
 
-export const AboutSection = styled.div`
+export const AboutSection = styled(motion.div)`
 margin-top: 0vh;
 height: 100vh;
 display: flex;
@@ -112,8 +98,9 @@ font-size: 2rem;
 export const IconsContainer = styled.div`
 display: flex;
 justify-content: space-around;
-align-items: center;
+align-items: flex-start;
 padding: 1rem;
+height: 20vh;
 `;
 
 
@@ -130,7 +117,7 @@ export const IconCard = styled.div`
     
   &:hover{
   box-shadow: -19px -13px 37px 0px rgba(0,0,0,0.26);
-    background-color: #C18D47;
+    background-color: ${primaryColor};
     color: black;
   }
 `;
@@ -145,3 +132,32 @@ width: 100%;
 align-items: flex-start;
 `;
 
+export const SkillsSection = styled(AboutSection)`
+display: flex;
+flex-direction: column;
+align-items: center;
+  .line{
+    background: white;
+    height: 0.2rem;
+    margin: 2rem 0rem;
+    width: 100%;
+  }
+  .skills-sub-section, .skill-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+  }
+  h2{
+    margin-bottom: 6rem;
+  }
+  h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  p{
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+`;

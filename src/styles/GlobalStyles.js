@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const primaryText = 'black';
+export const primaryColor = '#C18D47';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -17,6 +18,30 @@ body {
   color: ${primaryText};
   font-family: 'Prata', serif;
   font-size: 1.2rem;
-}`
+}
+
+button{
+  font-family: 'Prata', serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: ${primaryColor};
+  background: transparent;
+  color: ${primaryColor};
+  transition: all 0.5s ease;
+  margin-bottom: 8rem;
+  border-radius: 10px;
+  &:hover{
+    background: ${primaryColor};
+    color: white;
+  }
+}
+a{
+  color: black;
+}
+.hidden{
+  overflow: hidden;
+}`;
 
 export default GlobalStyle;

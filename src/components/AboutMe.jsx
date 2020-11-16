@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import { pageAnimation, textAnim, container } from '../animation';
 
 import { AboutSection, AboutText, ProgrammerSection, ProgrammerText } from '../styles/styles'
@@ -9,14 +9,14 @@ import IconsSection from './IconsSection';
 
 const AboutMe = () => {
 
-
-
-
+  const { scrollYProgress } = useViewportScroll()
+  const yAnim = useTransform(scrollYProgress, [0, 1], [300, -1000]);
+  console.log(useViewportScroll())
 
   return (
     <>
       <AboutSection>
-        <h2 >From beatmaker...</h2>
+        <motion.h2 style={{y: yAnim}}>From beatmaker...</motion.h2>
         <AboutText>
           <p>After studying jazz in prestigious music schools</p>
           <p>I became a producer/composer/arranger</p>
