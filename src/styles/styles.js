@@ -4,7 +4,7 @@ import {primaryColor} from '../styles/GlobalStyles'
 import { motion } from 'framer-motion';
 
 
-export const Hero = styled.div`
+export const Hero = styled(motion.div)`
 background-image: url(${pic3});
 width: 100%;
 background-attachment: fixed;

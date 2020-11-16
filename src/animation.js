@@ -35,3 +35,8 @@ export const skillsAnimation = {
     }
   }
 };
+
+export const pictureAnimation = {
+  hidden: {scale: 1.2, opacity: 0, transition: {duration: 0.2}},
+  show: {scale: 1, opacity: 1, transition: {ease: 'easeOut', duration: 0.8}}
+};

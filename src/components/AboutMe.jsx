@@ -11,6 +11,7 @@ const AboutMe = () => {
 
   const { scrollYProgress } = useViewportScroll()
   const yAnim = useTransform(scrollYProgress, [0, 1], [300, -1000]);
+  const reverseYAnim = useTransform(scrollYProgress, [0, 1], [-400, 200]);
   console.log(useViewportScroll())
 
   return (
@@ -24,7 +25,7 @@ const AboutMe = () => {
         </AboutText>
       </AboutSection>
       <ProgrammerSection>
-          <h2>... to programmer</h2>
+          <motion.h2 style={{y: reverseYAnim}}>... to programmer</motion.h2>
         <ProgrammerText>
           <p>But now I'm ready for a new challenge.</p>
           <p>I'm currently studying web development at the Wild Code School in Biarritz</p>
