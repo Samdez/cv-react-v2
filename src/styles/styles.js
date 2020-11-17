@@ -88,6 +88,7 @@ align-items: flex-end;
 flex-direction: column;
 justify-content: center;
 font-size: 2rem;
+width: 100%;
   p{
     height: 100%;
     display: flex;
