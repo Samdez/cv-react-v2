@@ -175,9 +175,24 @@ export const ProgrammerTitle = styled.div`
   font-size: 4rem;
   margin-right: 10%;
   margin-top: 10vh;
+  margin-bottom: 10vh;
 `;
 
-export const ProjectCard = styled.div`
+export const ProjectCardStyle = styled(motion.div)`
 height: 30vh;
-border: 1px solid black;
+border-radius: 5%;
+line-height: 1.2;
+width: 25vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+padding: 1rem;
+background: white;
+`;
+
+export const ProjectCardsContainer = styled.div`
+display: flex;
+justify-content: space-around;
+overflow: hidden;
 `;
