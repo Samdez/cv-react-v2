@@ -161,6 +161,20 @@ justify-content: center;
 export const ExperienceSection = styled.div`
 height: 100vh;
 background-color: ${primaryColor};
+h2{
+  font-size: 8rem;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+}
+`;
+
+export const ProgrammerTitle = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  font-size: 4rem;
+  margin-right: 10%;
+  margin-top: 10vh;
 `;
 
 export const ProjectCard = styled.div`
