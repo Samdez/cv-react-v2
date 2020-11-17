@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import pic3 from '../img/pic3.jpg';
-import {primaryColor} from '../styles/GlobalStyles'
+import { primaryColor } from '../styles/GlobalStyles'
 import { motion } from 'framer-motion';
 
 
@@ -104,18 +104,15 @@ padding: 1rem;
 height: 20vh;
 `;
 
-
-
-
 export const IconCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 0px solid #000000;
   border-radius: 122px 0px 122px 0px;
-    transition: all, 0.5s;
-    
+  transition: all, 0.5s;
+  height: 100%;
+  width: 100%;
   &:hover{
   box-shadow: -19px -13px 37px 0px rgba(0,0,0,0.26);
     background-color: ${primaryColor};
@@ -125,7 +122,7 @@ export const IconCard = styled.div`
 
 export const ProgrammerSection = styled(AboutSection)`
 align-items: flex-end;
-background: #C18D47;
+background: ${primaryColor};
 `;
 
 export const ProgrammerText = styled(AboutText)`
@@ -137,12 +134,10 @@ export const SkillsSection = styled(AboutSection)`
 display: flex;
 flex-direction: column;
 align-items: center;
-  .line{
-    background: white;
-    height: 0.2rem;
-    margin: 2rem 0rem;
-    width: 100%;
-  }
+height: 100vh;
+  .skills-sub-section{
+height: 20vh;
+}
   .skills-sub-section, .skill-content{
 display: flex;
 flex-direction: column;
@@ -161,4 +156,14 @@ justify-content: center;
     font-size: 1.4rem;
     line-height: 1.8;
   }
+`;
+
+export const ExperienceSection = styled.div`
+height: 100vh;
+background-color: ${primaryColor};
+`;
+
+export const ProjectCard = styled.div`
+height: 30vh;
+border: 1px solid black;
 `;

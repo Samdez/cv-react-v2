@@ -38,7 +38,6 @@ const Skills = () => {
         </Toggle>
       </div>
       </AnimateSharedLayout>
-      <div></div>
     </SkillsSection>
   );
 }

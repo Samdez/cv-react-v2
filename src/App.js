@@ -5,6 +5,7 @@ import HeroPage from './components/Hero';
 import Skills from './components/Skills';
 
 import { AnimatePresence } from 'framer-motion';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <HeroPage />
       <AboutMe />
       <Skills />
+      <Experience />
       </AnimatePresence>
     </div>
   );
