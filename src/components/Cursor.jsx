@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 const Cursor = () => {
-  return (<StyledCursor
-    className='cursor'
-  >
+  return (<StyledCursor className='cursor'>
+    <div></div>
   </StyledCursor>);
 }
 

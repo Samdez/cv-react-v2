@@ -4,10 +4,13 @@ import {skillsAnimation} from '../animation';
 import { SkillsSection } from '../styles/styles';
 import Toggle from './Toggle';
 import {AnimateSharedLayout} from 'framer-motion';
+import { cursorPrimary } from '../cursorAnimation';
 
 const Skills = () => {
   return (
-    <SkillsSection>
+    <SkillsSection
+    onMouseEnter={cursorPrimary}
+    >
       <div>
       <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO' rel="noreferrer" target="_blank" ><button>See my portfolio</button></a>
       </div>

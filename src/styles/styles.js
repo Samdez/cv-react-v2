@@ -187,6 +187,7 @@ flex-direction: column;
 align-items: center;
 justify-content: space-around;
 padding: 1rem;
+cursor: pointer;
 `;
 
 export const ProjectCardsContainer = styled.div`

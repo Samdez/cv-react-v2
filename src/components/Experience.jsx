@@ -3,6 +3,7 @@ import { ExperienceSection, ProgrammerTitle, ProjectCardsContainer } from "../st
 import ProjectCard from './ProjectCard';
 
 import  projectsList  from '../projectslist';
+import { cursorWhite } from "../cursorAnimation";
 
 const Experience = () => {
   const { scrollYProgress } = useViewportScroll();
@@ -11,7 +12,9 @@ const Experience = () => {
 
 
   return (
-    <ExperienceSection>
+    <ExperienceSection
+    onMouseEnter={cursorWhite}
+    >
       <motion.h2 style={{ x: xAnim }}>Experience</motion.h2>
       <ProgrammerTitle>
         <motion.h4 style={{ x: reverseXAnim }}>As a programmer</motion.h4>

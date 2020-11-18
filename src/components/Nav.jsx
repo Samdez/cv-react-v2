@@ -1,3 +1,4 @@
+import { cursorWhite, cursorWhiteHover } from '../cursorAnimation';
 import { Navbar, StyledLink, Name, NavContainer } from '../styles/styles'
 
 const Nav = () => {

@@ -5,6 +5,9 @@ import { useScroll } from '../useScroll';
 import { AboutSection, AboutText, ProgrammerSection, ProgrammerText } from '../styles/styles'
 
 import IconsSection from './IconsSection';
+import Cursor from './Cursor';
+import { primaryColor } from '../styles/GlobalStyles';
+import { cursorPrimary, cursorWhite } from '../cursorAnimation';
 
 
 const AboutMe = () => {
@@ -17,23 +20,26 @@ const AboutMe = () => {
 
   return (
     <>
-      <AboutSection>
-        <motion.h2 style={{y: yAnim}}>From beatmaker...</motion.h2>
+      <AboutSection
+      onMouseEnter={cursorPrimary}
+      >
+        <motion.h2 style={{ y: yAnim }}>From beatmaker...</motion.h2>
         <AboutText>
           <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>After studying jazz in prestigious music schools</motion.p>
           <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>I became a producer/composer/arranger</motion.p>
           <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>and worked with many different genres.</motion.p>
         </AboutText>
       </AboutSection>
-      <ProgrammerSection>
-          <motion.h2 style={{y: reverseYAnim}}>... to programmer</motion.h2>
+      <ProgrammerSection
+      onMouseEnter={cursorWhite}>
+        <motion.h2 style={{ y: reverseYAnim }}>... to programmer</motion.h2>
         <ProgrammerText>
           <motion.p ref={programmerText} variants={textAnimLeft} initial='hidden' animate={progControls}>But now I'm ready for a new challenge.</motion.p>
           <motion.p ref={programmerText} variants={textAnimLeft} initial='hidden' animate={progControls}>I'm currently studying web development at the Wild Code School in Biarritz</motion.p>
           <motion.p ref={programmerText} variants={textAnimLeft} initial='hidden' animate={progControls}>and I'm looking forward to working on new projects!</motion.p>
         </ProgrammerText>
       </ProgrammerSection>
-        <IconsSection />
+      <IconsSection />
     </>
   );
 }

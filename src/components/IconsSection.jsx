@@ -8,6 +8,7 @@ import { FaNode } from 'react-icons/fa';
 
 import { motion } from 'framer-motion';
 import { logoAnimation, container } from '../animation'
+import { cursorWhite } from '../cursorAnimation';
 
 const IconsSection = () => {
   const [jsLogo, setJsLogo] = useState(false);
@@ -15,7 +16,7 @@ const IconsSection = () => {
   const [githubLogo, setGithubLogo] = useState(false);
   const [nodeLogo, setNodeLogo] = useState(false);
   return (
-    <IconsContainer variants={container} initial='hidden' animate='show'>
+    <IconsContainer variants={container} initial='hidden' animate='show' onMouseEnter={cursorWhite}>
       <IconCard>
         <IoLogoJavascript style={{ fontSize: '4rem', cursor: 'pointer' }} className='icon' onClick={() => setJsLogo(!jsLogo)} />
         {jsLogo && <motion.p variants={logoAnimation} initial='hidden' animate='show' >Javascript</motion.p>}
