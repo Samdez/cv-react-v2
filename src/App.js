@@ -6,19 +6,26 @@ import Skills from './components/Skills';
 
 import { AnimatePresence } from 'framer-motion';
 import Experience from './components/Experience';
+import Cursor from './components/Cursor';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" onMouseMove={e => {
+      const cursor = document.querySelector(".cursor")
+      cursor.style.left = `${e.pageX}.px`
+      cursor.style.top = `${e.pageY}.px`
+    }} >
       <AnimatePresence>
-      <GlobalStyle />
-      <Nav />
-      <HeroPage />
-      <AboutMe />
-      <Skills />
-      <Experience />
+        <GlobalStyle />
+        <Cursor
+        />
+        <Nav />
+        <HeroPage />
+        <AboutMe />
+        <Skills />
+        <Experience />
       </AnimatePresence>
-    </div>
+    </div >
   );
 }
 

@@ -24,7 +24,6 @@ width: 100%;
 height: 100vh;
 `;
 
-
 export const Navbar = styled.div`
 display: flex;
 justify-content: center;
@@ -50,7 +49,6 @@ ul{
     width: 100%;
     &:hover{
       transition: all 0.5s ease;
-      cursor: pointer;
       border-radius: 0px 0px 122px 122px;
       background-color: ${primaryColor};
     }
@@ -74,7 +72,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
   h2{
-  font-size: 8rem;
+    font-size: 8rem;
     display: flex;
     align-items: center;
     height: 20vh;
@@ -137,6 +135,7 @@ align-items: center;
 height: 100vh;
   .skills-sub-section{
 height: 20vh;
+cursor: auto;
 }
   .skills-sub-section, .skill-content{
 display: flex;
@@ -175,7 +174,7 @@ export const ProgrammerTitle = styled.div`
   font-size: 4rem;
   margin-right: 10%;
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 `;
 
 export const ProjectCardStyle = styled(motion.div)`
@@ -188,7 +187,6 @@ flex-direction: column;
 align-items: center;
 justify-content: space-around;
 padding: 1rem;
-background: white;
 `;
 
 export const ProjectCardsContainer = styled.div`
