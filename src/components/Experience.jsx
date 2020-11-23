@@ -6,11 +6,14 @@ import projectsList from '../projectslist';
 import { cursorPrimary, cursorWhite } from "../cursorAnimation";
 import { FaSpotify } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import { fade } from "../animation";
+import { useScroll } from "../useScroll";
 
 const Experience = () => {
   const { scrollYProgress } = useViewportScroll();
   const xAnim = useTransform(scrollYProgress, [0, 1], [1000, 0]);
   const reverseXAnim = useTransform(scrollYProgress, [0, 1], [-1000, 0]);
+  const [element, controls] = useScroll();
 
 
   return (
@@ -40,18 +43,17 @@ const Experience = () => {
       <MusicianExperienceSection
         onMouseEnter={cursorPrimary}
       >
-        <MusicianIcons>
-          <div>
-            <a href="https://open.spotify.com/artist/0yABOXFZ5fJ1KyoXXgj5B0" rel="noreferrer" target="_blank"><FaSpotify style={{ fontSize: '4rem' }} /></a>
+        <MusicianIcons variants={fade} ref={element} animate={controls} initial='hidden'>
+            <a href="https://open.spotify.com/artist/0yABOXFZ5fJ1KyoXXgj5B0" rel="noreferrer" target="_blank"><FaSpotify style={{ fontSize: '4rem' }} />
             <h4>Listen</h4>
-          </div>
+            </a>
           <div>
             <a href="https://www.instagram.com/otaambeatmaker/?hl=fr" rel="noreferrer" target="_blank"><FiInstagram style={{ fontSize: '4rem' }} /></a>
             <h4>Watch</h4>
           </div>
         </MusicianIcons>
         <div>
-          <MusicianDescription>
+          <MusicianDescription variants={fade} ref={element} animate={controls} initial='hidden'>
             <p>I've accumulated over 10M streams with my solo project Otaam over the years</p>
             <p>and played hundreds of shows in France and in Europe.</p>
             <p>I've teached guitar both for private students</p>

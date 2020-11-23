@@ -17,7 +17,7 @@ html {
 
 body {
   background: #F9FCFB;
-  line-height: 1.2rem;
+  line-height: 2rem;
   letter-spacing: .1rem;
   overflow-x: hidden;
   color: ${primaryText};

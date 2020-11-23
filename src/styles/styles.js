@@ -208,9 +208,10 @@ flex-wrap: nowrap;
 position: absolute;
 right: 0;
 top: 30vh;
+font-size: 1.3rem;
 `;
 
-export const MusicianIcons = styled.div`
+export const MusicianIcons = styled(motion.div)`
   width: 50%;
   display: flex;
   justify-content: space-around;
