@@ -123,6 +123,13 @@ align-items: flex-end;
 background: ${primaryColor};
 `;
 
+export const MusicianExperienceSection = styled(ProgrammerSection)`
+background: white;
+width: 100%;
+align-items: stretch;
+position: relative;
+`;
+
 export const ProgrammerText = styled(AboutText)`
 width: 100%;
 align-items: flex-start;
@@ -194,4 +201,17 @@ export const ProjectCardsContainer = styled.div`
 display: flex;
 justify-content: space-around;
 overflow: hidden;
+`;
+
+export const MusicianDescription = styled(motion.div)`
+flex-wrap: nowrap;
+position: absolute;
+right: 0;
+top: 30vh;
+`;
+
+export const MusicianIcons = styled.div`
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
 `;

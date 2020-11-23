@@ -1,5 +1,4 @@
-import { cursorWhite, cursorWhiteHover } from '../cursorAnimation';
-import { Navbar, StyledLink, Name, NavContainer } from '../styles/styles'
+import { Navbar, Name, NavContainer } from '../styles/styles'
 
 const Nav = () => {
   return (
@@ -8,13 +7,13 @@ const Nav = () => {
     <Navbar>
       <ul>
         <li>
-          <a to='/'>About me</a>
+          <a href='#about-me'>About me</a>
         </li>
         <li>
-          <a to='/experience'>Experience</a>
+          <a href='#experience'>Experience</a>
         </li>
         <li>
-        <a to='/contact'>Contact/Info</a>  
+        <a href='#contact'>Contact/Info</a>  
         </li>
       </ul>
     </Navbar>

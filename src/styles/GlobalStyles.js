@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
   cursor: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #F9FCFB;
   line-height: 1.2rem;
@@ -23,6 +27,7 @@ body {
 
 a{
   text-decoration: none;
+  cursor: pointer;
 }
 
 button{

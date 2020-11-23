@@ -5,8 +5,6 @@ import { useScroll } from '../useScroll';
 import { AboutSection, AboutText, ProgrammerSection, ProgrammerText } from '../styles/styles'
 
 import IconsSection from './IconsSection';
-import Cursor from './Cursor';
-import { primaryColor } from '../styles/GlobalStyles';
 import { cursorPrimary, cursorWhite } from '../cursorAnimation';
 
 
@@ -22,8 +20,9 @@ const AboutMe = () => {
     <>
       <AboutSection
       onMouseEnter={cursorPrimary}
+      id="about-me"
       >
-        <motion.h2 style={{ y: yAnim }}>From beatmaker...</motion.h2>
+        <motion.h2 style={{ y: yAnim }}>From producer...</motion.h2>
         <AboutText>
           <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>After studying jazz in prestigious music schools</motion.p>
           <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>I became a producer/composer/arranger</motion.p>
