@@ -27,14 +27,12 @@ body {
 
 a{
   text-decoration: none;
-  cursor: pointer;
 }
 
 button{
   font-family: 'Prata', serif;
   font-weight: bold;
   font-size: 2.5rem;
-  cursor: pointer;
   padding: 1rem 2rem;
   border: ${primaryColor};
   background: transparent;

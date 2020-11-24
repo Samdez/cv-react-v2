@@ -116,6 +116,9 @@ export const IconCard = styled.div`
     background-color: ${primaryColor};
     color: black;
   }
+  svg:hover{
+    color: white;
+  }
 `;
 
 export const ProgrammerSection = styled(AboutSection)`
@@ -128,6 +131,7 @@ background: white;
 width: 100%;
 align-items: stretch;
 position: relative;
+height: 100vh;
 `;
 
 export const ProgrammerText = styled(AboutText)`
@@ -140,9 +144,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: 100vh;
+margin-bottom: 2vh;
   .skills-sub-section{
 height: 20vh;
-cursor: auto;
+width: 50%;
 }
   .skills-sub-section, .skill-content{
 display: flex;
@@ -215,4 +220,39 @@ export const MusicianIcons = styled(motion.div)`
   width: 50%;
   display: flex;
   justify-content: space-around;
+`;
+
+export const MusicLink = styled.div`
+svg:hover{
+  color: ${primaryColor};
+}
+`;
+
+export const ContactPage = styled.div`
+height: 100vh;
+background: ${primaryColor};
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+padding: 10vh;
+transition: color 2s;
+  h1{
+    font-size: 4rem;
+  }
+  .line {
+    height: 1vh;
+    background: black;
+    width: 50%;
+    margin-top: 5vh;
+    border-radius: 40%;
+  }
+  svg:hover{
+    color: white;
+  }
+  a{
+    &:hover{
+    color: white;
+  }
+  }
 `;

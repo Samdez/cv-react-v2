@@ -3,7 +3,7 @@ import { ProjectCardStyle } from "../styles/styles";
 
 const ProjectCard = ({ name, description, tools, link }) => {
   const { scrollYProgress } = useViewportScroll();
-  const cardAnim = useTransform(scrollYProgress, [0, 0.85], [1000, 0]);
+  const cardAnim = useTransform(scrollYProgress, [0, 0.8], [300, 0]);
 
   return ( 
     <a href={link} target="_blank" rel="noreferrer">

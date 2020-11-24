@@ -1,5 +1,5 @@
 import { motion, useTransform, useViewportScroll } from "framer-motion";
-import { ExperienceSection, MusicianDescription, MusicianExperienceSection, ProgrammerTitle, ProjectCardsContainer, MusicianIcons } from "../styles/styles";
+import { ExperienceSection, MusicianDescription, MusicianExperienceSection, ProgrammerTitle, ProjectCardsContainer, MusicianIcons, MusicLink } from "../styles/styles";
 import ProjectCard from './ProjectCard';
 
 import projectsList from '../projectslist';
@@ -44,13 +44,16 @@ const Experience = () => {
         onMouseEnter={cursorPrimary}
       >
         <MusicianIcons variants={fade} ref={element} animate={controls} initial='hidden'>
+          <MusicLink>
             <a href="https://open.spotify.com/artist/0yABOXFZ5fJ1KyoXXgj5B0" rel="noreferrer" target="_blank"><FaSpotify style={{ fontSize: '4rem' }} />
-            <h4>Listen</h4>
+              <h4>Listen</h4>
             </a>
-          <div>
-            <a href="https://www.instagram.com/otaambeatmaker/?hl=fr" rel="noreferrer" target="_blank"><FiInstagram style={{ fontSize: '4rem' }} /></a>
-            <h4>Watch</h4>
-          </div>
+          </MusicLink>
+          <MusicLink>
+            <a href="https://www.instagram.com/otaambeatmaker/?hl=fr" rel="noreferrer" target="_blank"><FiInstagram style={{ fontSize: '4rem' }} />
+              <h4>Watch</h4>
+            </a>
+          </MusicLink>
         </MusicianIcons>
         <div>
           <MusicianDescription variants={fade} ref={element} animate={controls} initial='hidden'>

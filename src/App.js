@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import { AnimatePresence } from 'framer-motion';
 import Experience from './components/Experience';
 import Cursor from './components/Cursor';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <AboutMe />
         <Skills />
         <Experience />
+        <Contact />
       </AnimatePresence>
     </div >
   );

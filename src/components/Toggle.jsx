@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from 'styled-components'; 
 import {motion} from 'framer-motion';
 import {skillsAnimation} from '../animation';
+import { primaryColor } from "../styles/GlobalStyles";
 
 const Toggle = ({ children, title }) => {
   const [toggle, setToggle] = useState(false);
@@ -18,7 +19,9 @@ const SkillParagraph = styled(motion.div)`
 display: flex;
 flex-direction: column;
 align-items: center;
-cursor: pointer;
+  h3:hover{
+    border-bottom: 3px solid ${primaryColor};
+  }
 `;
 
 

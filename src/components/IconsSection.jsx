@@ -18,20 +18,20 @@ const IconsSection = () => {
   return (
     <IconsContainer variants={container} initial='hidden' animate='show' onMouseEnter={cursorWhite}>
       <IconCard>
-        <IoLogoJavascript style={{ fontSize: '4rem', cursor: 'pointer' }} className='icon' onClick={() => setJsLogo(!jsLogo)} />
+        <IoLogoJavascript style={{ fontSize: '4rem' }} className='icon' onClick={() => setJsLogo(!jsLogo)} />
         {jsLogo && <motion.p variants={logoAnimation} initial='hidden' animate='show' >Javascript</motion.p>}
       </IconCard>
       <IconCard>
-        <DiReact style={{ fontSize: '4rem', cursor: 'pointer' }} onClick={() => setReactLogo(!reactLogo)} />
+        <DiReact style={{ fontSize: '4rem' }} onClick={() => setReactLogo(!reactLogo)} />
         {reactLogo && <motion.p variants={logoAnimation} initial='hidden' animate='show' >React</motion.p>}
       </IconCard>
 
       <IconCard>
-        <FiGithub style={{ fontSize: '4rem', cursor: 'pointer' }} onClick={() => setGithubLogo(!githubLogo)} />
+        <FiGithub style={{ fontSize: '4rem' }} onClick={() => setGithubLogo(!githubLogo)} />
         {githubLogo && <motion.p variants={logoAnimation} initial='hidden' animate='show' >Github</motion.p>}
       </IconCard>
       <IconCard>
-        <FaNode style={{ fontSize: '4rem', cursor: 'pointer' }} onClick={() => setNodeLogo(!nodeLogo)} />
+        <FaNode style={{ fontSize: '4rem' }} onClick={() => setNodeLogo(!nodeLogo)} />
         {nodeLogo && <motion.p variants={logoAnimation} initial='hidden' animate='show' >NodeJS</motion.p>}
       </IconCard>
 
