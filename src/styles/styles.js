@@ -242,7 +242,7 @@ transition: color 2s;
   }
   .line {
     height: 1vh;
-    background: black;
+    background: white;
     width: 50%;
     margin-top: 5vh;
     border-radius: 40%;
@@ -255,4 +255,10 @@ transition: color 2s;
     color: white;
   }
   }
+`;
+
+export const ContactIcons = styled.div`
+display: flex; 
+justify-content: space-around;
+width: 80%;
 `;
