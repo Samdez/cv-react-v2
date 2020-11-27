@@ -27,7 +27,7 @@ const Skills = () => {
         <Toggle title='Soft Skills'>
           <motion.div variants={skillsAnimation} initial='hidden' animate='show' exit='exit'>
             <motion.p variants={skillsAnimation}  className="skill-content">During my training, I worked on several projects using the AGILE methodology.</motion.p>
-            <motion.p variants={skillsAnimation}  className="skill-content">I've worked as a solo artist and in different professional bands,</motion.p>
+            <motion.p variants={skillsAnimation}  className="skill-content">I have worked as a solo artist and in different professional bands,</motion.p>
             <motion.p variants={skillsAnimation}  className="skill-content">which taught me how to balance independent work and teamwork.</motion.p>
           </motion.div>
         </Toggle>
@@ -35,8 +35,8 @@ const Skills = () => {
       <div className="skills-sub-section">
         <Toggle title="Miscellaneous">
         <motion.div variants={skillsAnimation} initial='hidden' animate='show' exit='exit' className="skill-content">
-          <motion.p variants={skillsAnimation}>I speak french, english and spanish</motion.p>
-          <motion.p variants={skillsAnimation}>I'm willing to work on remote or to move for short to mid-terms missions.</motion.p>
+          <motion.p variants={skillsAnimation}>I speak French, English and Spanish.</motion.p>
+          <motion.p variants={skillsAnimation}>I am willing to work remotely or to move for short to medium missions.</motion.p>
         </motion.div>
         </Toggle>
       </div>

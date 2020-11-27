@@ -24,17 +24,17 @@ const AboutMe = () => {
       >
         <motion.h2 style={{ y: yAnim }}>From producer...</motion.h2>
         <AboutText>
-          <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>After studying jazz in prestigious music schools</motion.p>
-          <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>I became a producer/composer/arranger</motion.p>
-          <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>and worked with many different genres.</motion.p>
+          <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>After studying jazz in various prestigious music schools,</motion.p>
+          <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>I became a producer / composer / arranger,</motion.p>
+          <motion.p ref={aboutText} variants={textAnim} initial='hidden' animate={controls}>working across many different genres.</motion.p>
         </AboutText>
       </AboutSection>
       <ProgrammerSection
       onMouseEnter={cursorWhite}>
-        <motion.h2 style={{ y: reverseYAnim }}>... to programmer</motion.h2>
+        <motion.h2 className='programmer-title' style={{ y: reverseYAnim }}>... to programmer</motion.h2>
         <ProgrammerText>
           <motion.p ref={programmerText} variants={textAnimLeft} initial='hidden' animate={progControls}>But now I'm ready for a new challenge.</motion.p>
-          <motion.p ref={programmerText} variants={textAnimLeft} initial='hidden' animate={progControls}>I'm currently studying web development at the Wild Code School in Biarritz</motion.p>
+          <motion.p ref={programmerText} variants={textAnimLeft} initial='hidden' animate={progControls}>I'm currently studying web development at the Wild Code School of Biarritz</motion.p>
           <motion.p ref={programmerText} variants={textAnimLeft} initial='hidden' animate={progControls}>and I'm looking forward to working on new projects!</motion.p>
         </ProgrammerText>
       </ProgrammerSection>

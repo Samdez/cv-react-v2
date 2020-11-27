@@ -15,6 +15,13 @@ height: 100vh;
 position: absolute;
 top: 0;
 z-index: -1;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+@media screen and (max-width: 768px){
+  position: absolute;
+  top: 0;
+}
 `;
 
 export const NavContainer = styled.div`
@@ -54,6 +61,14 @@ ul{
     }
   }
 }
+@media screen and (max-width: 768px){
+  li{
+    font-size: 0.8rem;
+  }
+    ul{
+      width: 100%;
+  }
+}
 `;
 
 export const Name = styled.h2`
@@ -63,6 +78,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: nowrap; 
+@media screen and (max-width: 768px){
+    display: none;
+  }
 `;
 
 export const AboutSection = styled(motion.div)`
@@ -77,6 +95,16 @@ justify-content: center;
     align-items: center;
     height: 20vh;
   }
+  @media screen and (max-width: 768px){
+    position: relative;
+    h2{
+      font-size: 3rem;
+    }
+    .programmer-title{
+      position: absolute;
+      top: 20vh;
+    }
+  }
 `;
 
 export const AboutText = styled.div`
@@ -86,12 +114,32 @@ align-items: flex-end;
 flex-direction: column;
 justify-content: center;
 font-size: 2rem;
-width: 100%;
   p{
     height: 100%;
     display: flex;
     align-items: center;
+    margin: 0.5rem;
 }
+@media screen and (max-width: 768px){
+  height: 80vh;
+  align-items: flex-start;
+  }
+  p{
+      font-size: 0.7em;
+      opacity: 1!important;
+      transform: none!important;
+      overflow: auto;
+    }
+`;
+
+export const ProgrammerSection = styled(AboutSection)`
+align-items: flex-end;
+background: ${primaryColor};
+`;
+
+export const ProgrammerText = styled(AboutText)`
+width: 100%;
+align-items: flex-start;
 `;
 
 export const IconsContainer = styled.div`
@@ -121,10 +169,6 @@ export const IconCard = styled.div`
   }
 `;
 
-export const ProgrammerSection = styled(AboutSection)`
-align-items: flex-end;
-background: ${primaryColor};
-`;
 
 export const MusicianExperienceSection = styled(ProgrammerSection)`
 background: white;
@@ -134,10 +178,6 @@ position: relative;
 height: 100vh;
 `;
 
-export const ProgrammerText = styled(AboutText)`
-width: 100%;
-align-items: flex-start;
-`;
 
 export const SkillsSection = styled(AboutSection)`
 display: flex;

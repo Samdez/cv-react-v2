@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -23,6 +24,9 @@ body {
   color: ${primaryText};
   font-family: 'Prata', serif;
   font-size: 1.2rem;
+  @media screen and (max-width: 768px){
+    font-size: 1.2rem;
+  }
 }
 
 a{
