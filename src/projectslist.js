@@ -16,7 +16,7 @@ const projectsList = [
       'React',
       'Bootstrap'
     ],
-    link: 'https://github.com/WildCodeSchool/btz-0920-p2-wow'
+    link: 'https://worldofwildcraft.netlify.app/'
   },
   {
     name: 'Discord bot',
