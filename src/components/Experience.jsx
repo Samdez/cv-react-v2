@@ -57,7 +57,7 @@ const Experience = () => {
         </MusicianIcons>
         <div>
           <MusicianDescription variants={fade} ref={element} animate={controls} initial='hidden'>
-            <motion.p variants={fade}>Over the years, I have accumulated over 10M streams with my solo project Otaam</motion.p>
+            <motion.p variants={fade}>Over the years, I have accumulated over 10M streams with my solo project <i>Otaam</i></motion.p>
             <motion.p variants={fade}>and played hundreds of shows in France and in Europe.</motion.p>
             <motion.p variants={fade}>I have taught individual students to play the guitar</motion.p>
             <motion.p variants={fade}>and worked as a professor in music academies.</motion.p>

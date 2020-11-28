@@ -95,9 +95,6 @@ justify-content: center;
     align-items: center;
     height: 20vh;
   }
-  .skills-list{
-    background: red;
-  }
   @media screen and (max-width: 768px){
     position: relative;
     h2{
@@ -240,6 +237,12 @@ h2{
     align-items: center;
     height: 20vh;
 }
+@media (max-width: 768px){
+  h2{
+    font-size: 2rem;
+    justify-self: center;
+  }
+}
 `;
 
 export const ProgrammerTitle = styled.div`
@@ -249,6 +252,9 @@ export const ProgrammerTitle = styled.div`
   margin-right: 10%;
   margin-top: 10vh;
   margin-bottom: 5vh;
+  @media (max-width: 768px){
+    display: none;
+  }
 `;
 
 export const ProjectCardStyle = styled(motion.div)`
@@ -268,6 +274,9 @@ export const ProjectCardsContainer = styled.div`
 display: flex;
 justify-content: space-around;
 overflow: hidden;
+@media (max-width: 768px){
+  overflow-x: scroll;
+}
 `;
 
 export const MusicianDescription = styled(motion.div)`
