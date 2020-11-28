@@ -337,6 +337,14 @@ transition: color 2s;
     color: white;
   }
   }
+  @media (max-width: 768px){
+    h1{
+      font-size: 1.8rem;
+    }
+    .line{
+      width: 100%;
+    }
+  }
 `;
 
 export const ContactIcons = styled.div`
