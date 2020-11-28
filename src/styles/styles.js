@@ -193,6 +193,9 @@ width: 100%;
 align-items: stretch;
 position: relative;
 height: 100vh;
+@media (max-width: 768px){
+  display: block;
+}
 `;
 
 
@@ -240,7 +243,7 @@ h2{
 @media (max-width: 768px){
   h2{
     font-size: 2rem;
-    justify-self: center;
+    margin-left: -10vh;
   }
 }
 `;
@@ -258,7 +261,7 @@ export const ProgrammerTitle = styled.div`
 `;
 
 export const ProjectCardStyle = styled(motion.div)`
-height: 30vh;
+height: 35vh;
 border-radius: 5%;
 line-height: 1.2;
 width: 25vh;
@@ -275,7 +278,8 @@ display: flex;
 justify-content: space-around;
 overflow: hidden;
 @media (max-width: 768px){
-  overflow-x: scroll;
+  display: flex;
+  flex-wrap: wrap;
 }
 `;
 
@@ -285,12 +289,19 @@ position: absolute;
 right: 0;
 top: 30vh;
 font-size: 1.3rem;
+@media (max-width: 768px){
+  padding: 1rem;
+}
 `;
 
 export const MusicianIcons = styled(motion.div)`
   width: 50%;
   display: flex;
   justify-content: space-around;
+  @media (max-width: 768px){
+    width: 100%;
+    margin-top: 10vh;
+  }
 `;
 
 export const MusicLink = styled.div`

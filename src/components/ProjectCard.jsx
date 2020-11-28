@@ -8,7 +8,11 @@ const ProjectCard = ({ name, description, tools, link }) => {
   return ( 
     <a href={link} target="_blank" rel="noreferrer">
     <ProjectCardStyle 
-    style= {{ y: cardAnim}}>
+    style= {{ y: cardAnim}}
+    whileHover={{
+      scale: 1.1,
+      transition: { duration: 0.5 },
+    }}>
       <h3>{name}</h3>
       <p>{description}</p>
     </ProjectCardStyle>
