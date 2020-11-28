@@ -95,14 +95,33 @@ justify-content: center;
     align-items: center;
     height: 20vh;
   }
+  .skills-list{
+    background: red;
+  }
   @media screen and (max-width: 768px){
     position: relative;
     h2{
       font-size: 3rem;
     }
+    button{
+      margin-bottom: 0;
+    }
     .programmer-title{
       position: absolute;
       top: 20vh;
+    }
+    .skills-list{
+      height: 100%;
+      margin-top: 0;
+      p{
+      font-size: 1rem;
+      font-weight: bold;
+      }
+    }
+    .skills-sub-section{
+      h2{
+        margin-bottom: 0;
+      }
     }
   }
 `;
@@ -167,6 +186,7 @@ export const IconCard = styled.div`
   svg:hover{
     color: white;
   }
+  
 `;
 
 
@@ -187,13 +207,14 @@ height: 100vh;
 margin-bottom: 2vh;
   .skills-sub-section{
 height: 20vh;
-width: 50%;
+width: 100%;
 }
   .skills-sub-section, .skill-content{
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+text-align: center;
   }
   h2{
     margin-bottom: 6rem;
@@ -208,6 +229,7 @@ justify-content: center;
     line-height: 1.8;
   }
 `;
+
 
 export const ExperienceSection = styled.div`
 height: 100vh;

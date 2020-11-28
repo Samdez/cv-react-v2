@@ -22,6 +22,9 @@ align-items: center;
   h3:hover{
     border-bottom: 3px solid ${primaryColor};
   }
+  @media screen and(max-width:768px){
+    background: red;
+  }
 `;
 
 
