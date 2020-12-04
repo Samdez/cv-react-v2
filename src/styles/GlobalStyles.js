@@ -14,6 +14,15 @@ const GlobalStyle = createGlobalStyle`
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  &::-webkit-scrollbar{
+      width: 0.5rem;
+    };
+    &::-webkit-scrollbar-thumb{
+      background-color: $primaryColor;
+    }
+    &::-webkit-scrollbar-track {
+    background: white;
+  }
 }
 
 body {
