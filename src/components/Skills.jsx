@@ -12,7 +12,7 @@ const Skills = () => {
     onMouseEnter={cursorPrimary}
     >
       <div>
-      <a href='https://cvdesignr.com/p/5fac13b6e828d' rel="noreferrer" target="_blank" ><button>See my full CV</button></a>
+      <a href='https://cvdesignr.com/p/5fac13b6e828d' rel="noreferrer" target="_blank" ><button>See my full resume</button></a>
       </div>
       <div className="skills-sub-section">
         <h2>My skills</h2>
