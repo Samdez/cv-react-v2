@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import pic3 from '../img/pic3.jpg';
+import pic3 from '../img/pic2resized.jpg';
 import { primaryColor } from '../styles/GlobalStyles'
 import { motion } from 'framer-motion';
 
@@ -323,8 +323,8 @@ transition: color 2s;
     font-size: 4rem;
   }
   .line {
-    height: 1vh;
-    background: white;
+    height: 0.2vh;
+    background: black;
     width: 50%;
     margin-top: 5vh;
     border-radius: 40%;
